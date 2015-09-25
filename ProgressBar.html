@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Progress Bar Demo</title>
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+  <script>
+$(function() {
+    $( "#progressbar" ).progressbar({
+      value: 0
+    });
+});
+
+// Set progressbar to 25%
+function set25() {
+	$( "#progressbar" ).progressbar( "option", "value", 25 );
+}
+
+// Set progressbar to 50%
+function set50() {
+	$( "#progressbar" ).progressbar( "option", "value", 50 );
+}
+
+// Set progressbar to 75%
+function set75() {
+	$( "#progressbar" ).progressbar( "option", "value", 75 );
+}
+
+// Set progressbar to 100%
+function set100() {
+	$( "#progressbar" ).progressbar( "option", "value", 100 );
+}
+
+</script>
+</head>
+<body>
+
+  <div id="progressbar"></div>
+<br />
+<button onclick="set25()">Set to 25%</button>
+
+<button onclick="set50()">Set to 50%</button>
+
+<button onclick="set75()">Set to 75%</button>
+
+<button onclick="set100()">Set to 100%</button>
+
+</body>
+</html>
